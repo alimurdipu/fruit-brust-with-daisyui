@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fruit Brust</title>
+
+    <!-- tailwind & daisyui -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .font-lato {
+        font-family: "Lato", sans-serif;
+      }
+    </style>
+
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/8225ae76f8.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- customized -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+
+              "common-btn": "#F85559",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-lato">
+    <header>
+      <!-- nav section -->
+      <nav class="flex justify-between">
+        <div
+          class="lg:flex justify-between mt-10 navbar bg-[#F85559] rounded-l-full rounded-r-full w-4/5 m-auto bg-base-100"
+        >
+          <div>
+            <div
+              class="navbar-center hidden lg:flex block justify-center items-center"
+            >
+              <ul class="menu menu-horizontal px-1 text-white">
+                <li><a>Home</a></li>
+                <li><a>About Us</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+              </ul>
+            </div>
+            <div class="navbar-start">
+              <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16"
+                    />
+                  </svg>
+                </label>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+                >
+                  <li><a>Home</a></li>
+                  <li>
+                    <a>About Us</a>
+                    <ul class="p-2">
+                      <li><a>Shop</a></li>
+                      <li><a>All Fruits</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div>
+            <a
+              class="flex justify-around items-center btn btn-ghost mr-8 text-center text-lg text-white"
+              ><img class="w-8 h-8" src="images/logo.png" alt="" /> Fruit
+              Burst</a
+            >
+          </div>
+
+          <div class="navbar-end">
+            <input
+              type="text"
+              placeholder="Search here"
+              class="input input-bordered rounded-2xl input-sm w-full max-w-xs hidden lg:block"
+            />
+            <i class="fa-solid fa-magnifying-glass -ml-5"></i>
+          </div>
+        </div>
+      </nav>
+      <!-- carousel section -->
+      <!-- banner 1 -->
+      <section class="w-4/5 m-auto mt-10 relative">
+        <div class="carousel w-full">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="/images/banner1.png" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide4" class="btn btn-circle">❮</a>
+              <div class="text-center text-white">
+                <h1 class="text-2xl lg:text-5xl font-bold">
+                  Exotic tastes at your <br />
+                  doorstep
+                </h1>
+                <p class="text-lg lg:text-xl">
+                  We supply highly quality organic products
+                </p>
+                <button class="btn bg-common-btn border-none text-white mt-6">
+                  Shop Now
+                </button>
+              </div>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <!-- banner 2 -->
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="/images/banner2.png" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <div class="text-center text-white">
+                <h1 class="text-2xl lg:text-5xl font-bold">
+                  Exotic tastes at your <br />
+                  doorstep
+                </h1>
+                <p class="text-lg lg:text-xl">
+                  We supply highly quality organic products
+                </p>
+                <button class="btn bg-common-btn border-none text-white mt-6">
+                  Shop Now
+                </button>
+              </div>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <!-- banner 3 -->
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="/images/banner3.png" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <div class="text-center text-white">
+                <h1 class="text-2xl lg:text-5xl font-bold">
+                  Exotic tastes at your <br />
+                  doorstep
+                </h1>
+                <p class="text-lg lg:text-xl">
+                  We supply highly quality organic products
+                </p>
+                <button class="btn bg-common-btn border-none text-white mt-6">
+                  Shop Now
+                </button>
+              </div>
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <!-- banner 4 -->
+          <div id="slide4" class="carousel-item relative w-full">
+            <img src="/images/banner4.png" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <div class="flex justify-center items-center">
+                <a href="#slide3" class="btn btn-circle">❮</a>
+                <div class="text-center text-white">
+                  <h1 class="text-2xl lg:text-5xl font-bold">
+                    Exotic tastes at your <br />
+                    doorstep
+                  </h1>
+                  <p class="text-lg lg:text-xl">
+                    We supply highly quality organic products
+                  </p>
+                  <button
+                    class="btn bg-common-btn border-none text-white -mt-5 py-6 lg:mt-6"
+                  >
+                    Shop Now
+                  </button>
+                </div>
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- sub banner section -->
+      <section
+        class="bg-white w-1/2 m-auto rounded-xl absolute -mt-16 ml-80 hidden lg:block"
+      >
+        <div class="flex justify-center items-center gap-5">
+          <!-- first fruit -->
+          <div class="text-center">
+            <img src="images/fruit1.png" alt="" />
+            <p>Grapes</p>
+          </div>
+          <!-- second fruit -->
+          <div class="text-center">
+            <img src="images/fruit2.png" alt="" />
+            <p>Orange</p>
+          </div>
+          <!-- third fruit -->
+          <div class="text-center">
+            <img src="images/fruit3.png" alt="" />
+            <p>Mango</p>
+          </div>
+          <!-- fourth fruit -->
+          <div class="text-center">
+            <img src="images/fruit4.png" alt="" />
+            <p>Strawberry</p>
+          </div>
+          <!-- fifth fruit -->
+          <div class="text-center">
+            <img src="images/fruit5.png" alt="" />
+            <p>Pomegranate</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- deal of the day section -->
+      <section>
+        <div>
+          <h1>Deal of the day</h1>
+          <p>
+            Contrary to popular belief, is not simply random text. It has roots
+            in a piece of classical Latin literature from 45 BC, making it over
+            2000 years old.
+          </p>
+        </div>
+      </section>
+    </header>
+  </body>
+</html>
