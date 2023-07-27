@@ -54,7 +54,7 @@
       <!-- nav section -->
       <nav class="flex justify-between">
         <div
-          class="lg:flex justify-between mt-10 navbar bg-[#F85559] rounded-l-full rounded-r-full w-4/5 m-auto bg-base-100"
+          class="lg:flex justify-between mt-10 navbar md:flex md:bg-[#F85559] lg:bg-[#F85559] rounded-l-full rounded-r-full w-4/5 m-auto bg-base-100"
         >
           <div>
             <div
@@ -103,7 +103,7 @@
           </div>
           <div>
             <a
-              class="flex justify-around items-center btn btn-ghost mr-8 text-center text-lg text-white"
+              class="flex justify-center items-center mr-8 lg:text-center text-lg lg:text-white font-bold btn bg-transparent border-none text-end"
               ><img class="w-8 h-8" src="images/logo.png" alt="" /> Fruit
               Burst</a
             >
@@ -113,7 +113,7 @@
             <input
               type="text"
               placeholder="Search here"
-              class="input input-bordered rounded-2xl input-sm w-full max-w-xs hidden lg:block"
+              class="input input-bordered rounded-2xl input-sm w-full max-w-xs hidden md:block lg:block"
             />
             <i class="fa-solid fa-magnifying-glass -ml-5"></i>
           </div>
@@ -759,8 +759,10 @@
       </section>
 
       <!-- hero section -->
-      <div class="hero w-4/5 h-full m-auto mt-10">
-        <img src="images/banner1.png" class="w-full h-full bg-none lg:bg" />
+      <div
+        class="hero w-4/5 h-full m-auto mt-10"
+        style="background-image: url(images/banner1.png)"
+      >
         <div class="hero-overlay bg-opacity-60"></div>
         <div class="hero-content text-center text-neutral-content">
           <div class="">
@@ -775,7 +777,7 @@
               class="grid gap-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-4"
             >
               <!-- first img -->
-              <div class="card w-52">
+              <div class="card w-52 m-auto">
                 <figure class="px-10">
                   <img
                     src="images/member1.png"
@@ -796,7 +798,7 @@
                 </div>
               </div>
               <!-- second img -->
-              <div class="card w-52">
+              <div class="card w-52 m-auto">
                 <figure class="px-10">
                   <img
                     src="images/member2.png"
@@ -817,7 +819,7 @@
                 </div>
               </div>
               <!-- third img -->
-              <div class="card w-52">
+              <div class="card w-52 m-auto">
                 <figure class="px-10">
                   <img
                     src="images/member3.png"
@@ -838,7 +840,7 @@
                 </div>
               </div>
               <!-- fourth img -->
-              <div class="card w-52">
+              <div class="card w-52 m-auto">
                 <figure class="px-10">
                   <img
                     src="images/member4.png"
@@ -876,7 +878,7 @@
       >
         <div>
           <div
-            class="flex flex-col lg:flex-row justify-center items-center gap-5 mb-7"
+            class="flex flex-col lg:flex-row justify-center items-center gap-5 mb-7 text-center lg:text-left"
           >
             <div
               class="flex justify-center items-center w-16 h-16 rounded-full bg-gray-300"
@@ -885,7 +887,7 @@
             </div>
             <div>
               <h3 class="text-xl font-extrabold">Dedicated Team</h3>
-              <hr />
+              <hr class="w-32 bg-slate-500" />
               <p>
                 Professional employees are there for you to pick <br />
                 the most amazing and fresh fruits.
@@ -893,7 +895,7 @@
             </div>
           </div>
           <div
-            class="flex flex-col lg:flex-row justify-center items-center gap-5 mb-7"
+            class="flex flex-col lg:flex-row justify-center items-center gap-5 mb-7 text-center lg:text-left"
           >
             <div
               class="flex justify-center items-center w-16 h-16 rounded-full bg-gray-300"
@@ -902,7 +904,7 @@
             </div>
             <div>
               <h3 class="text-xl font-extrabold">Fresh is Best</h3>
-              <hr />
+              <hr class="w-32 bg-slate-500" />
               <p>
                 Professional employees are there for you to pick <br />
                 the most amazing and fresh fruits.
@@ -910,7 +912,7 @@
             </div>
           </div>
           <div
-            class="flex flex-col lg:flex-row justify-center items-center gap-5"
+            class="flex flex-col lg:flex-row justify-center items-center gap-5 text-center lg:text-left"
           >
             <div
               class="flex justify-center items-center w-16 h-16 rounded-full bg-gray-300"
@@ -919,7 +921,7 @@
             </div>
             <div>
               <h3 class="text-xl font-extrabold">Gift Certificates</h3>
-              <hr />
+              <hr class="w-32 bg-slate-500" />
               <p>
                 Professional employees are there for you to pick <br />
                 the most amazing and fresh fruits.
@@ -931,7 +933,7 @@
         <div><img src="images/whychoose1.png" alt="" /></div>
         <div>
           <div
-            class="flex flex-col items-center lg:flex-row-reverse gap-5 justify-center text-right mb-7"
+            class="flex flex-col items-center lg:flex-row-reverse gap-5 justify-center mb-7 text-center lg:text-right"
           >
             <div
               class="flex justify-center items-center w-16 h-16 rounded-full bg-gray-300"
@@ -940,7 +942,7 @@
             </div>
             <div>
               <h3 class="text-xl font-extrabold">Integrated Supplier</h3>
-              <hr />
+              <hr class="w-32 bg-slate-500" />
               <p>
                 Professional employees are there for you to pick <br />
                 the most amazing and fresh fruits.
@@ -948,7 +950,7 @@
             </div>
           </div>
           <div
-            class="flex flex-col items-center lg:flex-row-reverse gap-5 justify-center text-right mb-7"
+            class="flex flex-col items-center lg:flex-row-reverse gap-5 justify-center mb-7 text-center lg:text-right"
           >
             <div
               class="flex justify-center items-center w-16 h-16 rounded-full bg-gray-300"
@@ -957,7 +959,7 @@
             </div>
             <div>
               <h3 class="text-xl font-extrabold">Sustainable Practice</h3>
-              <hr />
+              <hr class="w-32 bg-slate-500" />
               <p>
                 Professional employees are there for you to pick <br />
                 the most amazing and fresh fruits.
@@ -965,7 +967,7 @@
             </div>
           </div>
           <div
-            class="flex flex-col items-center lg:flex-row-reverse gap-5 justify-center text-right"
+            class="flex flex-col items-center lg:flex-row-reverse gap-5 justify-center text-center lg:text-right"
           >
             <div
               class="flex justify-center items-center w-16 h-16 rounded-full bg-gray-300"
@@ -974,7 +976,7 @@
             </div>
             <div>
               <h3 class="text-xl font-extrabold">The Benefits Only</h3>
-              <hr />
+              <hr class="w-32 bg-slate-500" />
               <p>
                 Professional employees are there for you to pick <br />
                 the most amazing and fresh fruits.
@@ -995,7 +997,9 @@
           ><img class="w-8 h-8" src="images/logo.png" alt="" /> Fruit Burst</a
         >
       </div>
-      <div class="grid grid-flow-col gap-4 text-white">
+      <div
+        class="flex justify-center items-center flex-wrap space-x-5 gap-4 text-white"
+      >
         <a class="link link-hover">Home</a>
         <a class="link link-hover">About us</a>
         <a class="link link-hover">Shop</a>
